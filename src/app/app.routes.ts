@@ -14,15 +14,12 @@ import { Pagina9 } from './pagina9/pagina9';
 
 export const routes: Routes = [
   { path: '', component: Homepage }, 
-  { path: 'pagina1', component: Pagina1 },
-  { path: 'pagina2', component: Pagina2 },
-  { path: 'pagina3', component: Pagina3 },
-  { path: 'pagina4', component: Pagina4 },
-  { path: 'pagina5', component: Pagina5 },
-  { path: 'pagina6', component: Pagina6 },
-  { path: 'pagina7', component: Pagina7 },
-  { path: 'pagina8', component: Pagina8 },
-  { path: 'pagina9', component: Pagina9 },
+  { path: 'granos', component: Pagina1 },
+  { path: 'lacteos', component: Pagina2 },
+  { path: 'carnes', component: Pagina3 },
+  { path: 'verduras', component: Pagina4 },
+  { path: 'bebidas', component: Pagina5 },
+
   
   { path: '**', redirectTo: '' } 
 ];
