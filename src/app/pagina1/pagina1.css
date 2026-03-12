@@ -1,0 +1,39 @@
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; 
+  max-width: 1200px; 
+}
+
+
+.area-header {
+  height: 100px; 
+  margin-bottom: 10px; 
+}
+
+
+.menu-principal ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-principal li {
+  margin-right: 20px; 
+}
+
+
+.contenido-central {
+  display: grid;
+  grid-template-columns: 70% 30%; 
+  gap: 20px; 
+  min-height: 400px; 
+}
+
+
+
+.pie-pagina {
+  margin-top: 20px; 
+  height: 50px; 
+}
