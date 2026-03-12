@@ -1,0 +1,63 @@
+/* Estilos Globales para todo el POS */
+:root {
+  --primary-blue: #2a7ade;
+  --light-blue: #9bc5f3;
+  --border-color: #333;
+}
+
+body { margin: 0; font-family: sans-serif; }
+
+/* El contenedor que divide pantalla en 2: Contenido y Carrito */
+.layout-pos {
+  display: grid;
+  grid-template-columns: 1fr 300px; /* Contenido izquierda, Carrito derecha */
+  gap: 20px;
+  padding: 20px;
+  min-height: 80vh;
+}
+
+/* Encabezado Azul */
+.area-header {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo de las tarjetas (Categorías) */
+.grid-categorias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.card-item {
+  background-color: var(--light-blue);
+  border: 1.5px solid var(--primary-blue);
+  border-radius: 8px;
+  padding: 30px;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* El Carrito a la derecha */
+.barra-lateral-carrito {
+  border: 1.5px solid var(--border-color);
+  border-radius: 8px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carrito-header {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
