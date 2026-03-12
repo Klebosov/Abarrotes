@@ -1,49 +1,19 @@
-
-<header class="area-header">
-  <div class="logo-title">
-    <span class="icon-store">🏪</span>
-    <div>
-      <h1>Sistema POS</h1>
-      <p>Tienda de Insumos Alimenticios</p>
-    </div>
+<section>
+  <h2 style="margin-bottom: 20px;">📦 Categoría de Productos</h2>
+  
+  <div class="grid-categorias">
+    <a routerLink="/granos" class="card-item">Granos <span>›</span></a>
+    <a routerLink="/lacteos" class="card-item">Lácteos <span>›</span></a>
+    <a routerLink="/carnes" class="card-item">Carnes <span>›</span></a>
+    <a routerLink="/verduras" class="card-item">Verduras <span>›</span></a>
+    <a routerLink="/bebidas" class="card-item">Bebidas <span>›</span></a>
   </div>
-  <button class="settings-btn">⚙️</button>
-</header>
 
-<main class="contenedor-principal">
-  <section class="seccion-principal">
-    <div class="header-seccion">
-      <span class="icon-box">📦</span>
-      <h2>Categoría de Productos</h2>
-    </div>
-    
-    <nav class="menu-categorias">
-      <a routerLink="/granos" class="card-categoria">Granos <span class="arrow">›</span></a>
-      <a routerLink="/lacteos" class="card-categoria">Lácteos <span class="arrow">›</span></a>
-      <a routerLink="/carnes" class="card-categoria">Carnes <span class="arrow">›</span></a>
-      <a routerLink="/verduras" class="card-categoria">Verduras <span class="arrow">›</span></a>
-      <a routerLink="/bebidas" class="card-categoria">Bebidas <span class="arrow">›</span></a>
-    </nav>
-
-    <footer class="instrucciones">
-      <h3>Instrucciones de Uso</h3>
-      <ul>
-        <li><strong>1.</strong> Selecciona una categoría para explorar los productos</li>
-        <li><strong>2.</strong> Agrega productos al carrito haciendo clic en "Agregar"</li>
-        <li><strong>3.</strong> Ajusta las cantidades desde el carrito a la derecha</li>
-        <li><strong>4.</strong> Procesa la venta cuando estés listo</li>
-      </ul>
-    </footer>
-  </section>
-
-  <aside class="barra-lateral">
-    <div class="carrito-header">
-      <span class="icon-cart">🛒</span>
-      <h3>Carrito de Venta</h3>
-    </div>
-    <div class="carrito-vacio">
-      <span class="icon-empty">🛒</span>
-      <p>No hay productos en el carrito</p>
-    </div>
-  </aside>
-</main>
+  <div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 20px;">
+    <h3>Instrucciones de Uso</h3>
+    <ol>
+      <li>Selecciona una categoría...</li>
+      <li>Agrega productos...</li>
+    </ol>
+  </div>
+</section>
