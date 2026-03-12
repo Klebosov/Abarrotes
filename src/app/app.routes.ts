@@ -14,11 +14,11 @@ import { Pagina9 } from './pagina9/pagina9';
 
 export const routes: Routes = [
   { path: '', component: Homepage }, 
-  { path: 'granos', component: Pagina1 },
-  { path: 'lacteos', component: Pagina2 },
-  { path: 'carnes', component: Pagina3 },
-  { path: 'verduras', component: Pagina4 },
-  { path: 'bebidas', component: Pagina5 },
+  { path: 'pagina1', component: Pagina1 },
+  { path: 'pagina2', component: Pagina2 },
+  { path: 'pagina3', component: Pagina3 },
+  { path: 'pagina4', component: Pagina4 },
+  { path: 'pagina5', component: Pagina5 },
 
   
   { path: '**', redirectTo: '' } 
