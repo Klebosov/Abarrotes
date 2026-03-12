@@ -1,1 +1,97 @@
+/* Layout General */
+.pantalla-completa {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
 
+.header-azul {
+  background-color: #2a7ade;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-tienda { display: flex; align-items: center; gap: 10px; }
+.info-tienda h1 { margin: 0; font-size: 1.2rem; }
+.info-tienda p { margin: 0; font-size: 0.8rem; }
+.btn-config { background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+
+/* Distribución en dos columnas */
+.cuerpo-pos {
+  display: grid;
+  grid-template-columns: 1fr 320px; /* Izquierda flexible, derecha fija */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Cajas blancas con bordes */
+.contenedor-blanco {
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  background: white;
+}
+
+.titulo-seccion { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+.titulo-seccion h2 { margin: 0; font-size: 1.1rem; }
+
+/* Grid de botones de categoría */
+.grid-categorias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.tarjeta-cat {
+  background-color: #9bc5f3;
+  border: 1px solid #2a7ade;
+  border-radius: 6px;
+  padding: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Instrucciones (abajo de categorías) */
+.instrucciones-seccion {
+  margin-top: 20px;
+}
+.instrucciones-seccion ul { list-style: none; padding: 0; }
+.instrucciones-seccion li { margin-bottom: 8px; font-size: 0.9rem; }
+
+/* Estilo del Carrito */
+.carrito-contenedor {
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carrito-header {
+  background-color: #2a7ade;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.carrito-contenido {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+}
+
+.icono-vacio { font-size: 3rem; margin-bottom: 10px; }
