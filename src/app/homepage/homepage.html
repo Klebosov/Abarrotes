@@ -1,19 +1,54 @@
-<section>
-  <h2 style="margin-bottom: 20px;">📦 Categoría de Productos</h2>
-  
-  <div class="grid-categorias">
-    <a routerLink="/granos" class="card-item">Granos <span>›</span></a>
-    <a routerLink="/lacteos" class="card-item">Lácteos <span>›</span></a>
-    <a routerLink="/carnes" class="card-item">Carnes <span>›</span></a>
-    <a routerLink="/verduras" class="card-item">Verduras <span>›</span></a>
-    <a routerLink="/bebidas" class="card-item">Bebidas <span>›</span></a>
-  </div>
+<div class="pantalla-completa">
+  <header class="header-azul">
+    <div class="info-tienda">
+      <span class="icono">🏪</span>
+      <div>
+        <h1>Sistema POS</h1>
+        <p>Tienda de Insumos Alimenticios</p>
+      </div>
+    </div>
+    <button class="btn-config">⚙️</button>
+  </header>
 
-  <div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 20px;">
-    <h3>Instrucciones de Uso</h3>
-    <ol>
-      <li>Selecciona una categoría...</li>
-      <li>Agrega productos...</li>
-    </ol>
+  <div class="cuerpo-pos">
+    <div class="columna-izquierda">
+      <section class="contenedor-blanco categorias-seccion">
+        <div class="titulo-seccion">
+          <span class="icono">📦</span>
+          <h2>Categoria de Productos</h2>
+        </div>
+        
+        <div class="grid-categorias">
+          <a routerLink="/pagina1" class="tarjeta-cat">Granos <span class="flecha">›</span></a>
+          <a routerLink="/pagina2" class="tarjeta-cat">Lacteos <span class="flecha">›</span></a>
+          <a routerLink="/pagina3" class="tarjeta-cat">Carnes <span class="flecha">›</span></a>
+          <a routerLink="/pagina4" class="tarjeta-cat">Verduras <span class="flecha">›</span></a>
+          <a routerLink="/pagina5" class="tarjeta-cat">Bebidas <span class="flecha">›</span></a>
+        </div>
+      </section>
+
+      <section class="contenedor-blanco instrucciones-seccion">
+        <h3>Instrucciones de Uso</h3>
+        <ul>
+          <li><strong>1.</strong> Selecciona una categoría para explorar los productos</li>
+          <li><strong>2.</strong> Agrega productos al carrito haciendo clic en "Agregar"</li>
+          <li><strong>3.</strong> Ajusta las cantidades desde el carrito a la derecha</li>
+          <li><strong>4.</strong> Procesa la venta cuando estés listo</li>
+        </ul>
+      </section>
+    </div>
+
+    <aside class="columna-derecha">
+      <div class="carrito-contenedor">
+        <div class="carrito-header">
+          <span class="icono">🛒</span>
+          <h3>Carrito de Venta</h3>
+        </div>
+        <div class="carrito-contenido">
+          <span class="icono-vacio">🛒</span>
+          <p>No hay productos en el carrito</p>
+        </div>
+      </div>
+    </aside>
   </div>
-</section>
+</div>
