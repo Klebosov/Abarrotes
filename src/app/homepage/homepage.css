@@ -1,4 +1,4 @@
-/* Layout General */
+
 .pantalla-completa {
   display: flex;
   flex-direction: column;
@@ -20,15 +20,15 @@
 .info-tienda p { margin: 0; font-size: 0.8rem; }
 .btn-config { background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
 
-/* Distribución en dos columnas */
+
 .cuerpo-pos {
   display: grid;
-  grid-template-columns: 1fr 320px; /* Izquierda flexible, derecha fija */
+  grid-template-columns: 1fr 320px; 
   gap: 20px;
   padding: 20px;
 }
 
-/* Cajas blancas con bordes */
+
 .contenedor-blanco {
   border: 1px solid #333;
   border-radius: 8px;
@@ -39,7 +39,7 @@
 .titulo-seccion { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
 .titulo-seccion h2 { margin: 0; font-size: 1.1rem; }
 
-/* Grid de botones de categoría */
+
 .grid-categorias {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -59,14 +59,14 @@
   align-items: center;
 }
 
-/* Instrucciones (abajo de categorías) */
+
 .instrucciones-seccion {
   margin-top: 20px;
 }
 .instrucciones-seccion ul { list-style: none; padding: 0; }
 .instrucciones-seccion li { margin-bottom: 8px; font-size: 0.9rem; }
 
-/* Estilo del Carrito */
+
 .carrito-contenedor {
   border: 1px solid #333;
   border-radius: 8px;
