@@ -1,46 +1,49 @@
 
 <header class="area-header">
-
-  <h1>PAGINA PRINCIAPL</h1>
+  <div class="logo-title">
+    <span class="icon-store">🏪</span>
+    <div>
+      <h1>Sistema POS</h1>
+      <p>Tienda de Insumos Alimenticios</p>
+    </div>
+  </div>
+  <button class="settings-btn">⚙️</button>
 </header>
 
-<nav class="menu-principal">
- 
-  <ul>
-    <li><a routerLink="/">Homepage</a></li>
-    <li><a routerLink="/pagina1">Página 1</a></li>
-    <li><a routerLink="/pagina2">Página 2</a></li>
-    <li><a routerLink="/pagina3">Página 3</a></li>
-    <li><a routerLink="/pagina4">Página 4</a></li>
-    <li><a routerLink="/pagina5">Página 5</a></li>
-    <li><a routerLink="/pagina6">Página 6</a></li>
-    <li><a routerLink="/pagina7">Página 7</a></li>
-    <li><a routerLink="/pagina8">Página 8</a></li>
-    <li><a routerLink="/pagina9">Página 9</a></li>
-  </ul>
-</nav>
-
-<main class="contenido-central">
-  
+<main class="contenedor-principal">
   <section class="seccion-principal">
-    <h2>Sección 1</h2>
-    <p>Contenido sección 1 </p>
+    <div class="header-seccion">
+      <span class="icon-box">📦</span>
+      <h2>Categoría de Productos</h2>
+    </div>
+    
+    <nav class="menu-categorias">
+      <a routerLink="/granos" class="card-categoria">Granos <span class="arrow">›</span></a>
+      <a routerLink="/lacteos" class="card-categoria">Lácteos <span class="arrow">›</span></a>
+      <a routerLink="/carnes" class="card-categoria">Carnes <span class="arrow">›</span></a>
+      <a routerLink="/verduras" class="card-categoria">Verduras <span class="arrow">›</span></a>
+      <a routerLink="/bebidas" class="card-categoria">Bebidas <span class="arrow">›</span></a>
+    </nav>
+
+    <footer class="instrucciones">
+      <h3>Instrucciones de Uso</h3>
+      <ul>
+        <li><strong>1.</strong> Selecciona una categoría para explorar los productos</li>
+        <li><strong>2.</strong> Agrega productos al carrito haciendo clic en "Agregar"</li>
+        <li><strong>3.</strong> Ajusta las cantidades desde el carrito a la derecha</li>
+        <li><strong>4.</strong> Procesa la venta cuando estés listo</li>
+      </ul>
+    </footer>
   </section>
 
-  
-  <article class="articulo-destacado">
-    <h3>Artículo Destacado</h3>
-    <p>Contenido artículo </p>
-  </article>
-
- 
   <aside class="barra-lateral">
-    <h3>Barra Lateral</h3>
-    <p>Contenido aside </p>
+    <div class="carrito-header">
+      <span class="icon-cart">🛒</span>
+      <h3>Carrito de Venta</h3>
+    </div>
+    <div class="carrito-vacio">
+      <span class="icon-empty">🛒</span>
+      <p>No hay productos en el carrito</p>
+    </div>
   </aside>
 </main>
-
-<footer class="pie-pagina">
-  
-  <p>Pie de página </p>
-</footer>
