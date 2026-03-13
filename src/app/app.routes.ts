@@ -19,6 +19,10 @@ export const routes: Routes = [
   { path: 'pagina3', component: Pagina3 },
   { path: 'pagina4', component: Pagina4 },
   { path: 'pagina5', component: Pagina5 },
+  { path: 'pagina6', component: Pagina6 },
+  { path: 'pagina7', component: Pagina7 },
+  { path: 'pagina8', component: Pagina8 },
+  { path: 'pagina9', component: Pagina9 },
 
   
   { path: '**', redirectTo: '' } 
