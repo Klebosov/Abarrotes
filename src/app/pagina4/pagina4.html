@@ -1,45 +1,75 @@
-<header class="area-header">
+<div class="pantalla-pos">
+  <header class="header-azul">
+    <div class="logo-area">
+      <span class="icono">🏪</span>
+      <div>
+        <h1>Sistema POS</h1>
+        <p>Tienda de Insumos Alimenticios</p>
+      </div>
+    </div>
+    <button class="btn-config">⚙️</button>
+  </header>
 
-  <h1>PAGINA 4</h1>
-</header>
+  <div class="cuerpo-pos">
+    <main class="panel-productos">
+      
+      <a routerLink="/" class="btn-volver">
+        ← Volver a Categorias
+      </a>
 
-<nav class="menu-principal">
- 
-  <ul>
-    <li><a routerLink="/">Homepage</a></li>
-    <li><a routerLink="/pagina1">Página 1</a></li>
-    <li><a routerLink="/pagina2">Página 2</a></li>
-    <li><a routerLink="/pagina3">Página 3</a></li>
-    <li><a routerLink="/pagina4">Página 4</a></li>
-    <li><a routerLink="/pagina5">Página 5</a></li>
-    <li><a routerLink="/pagina6">Página 6</a></li>
-    <li><a routerLink="/pagina7">Página 7</a></li>
-    <li><a routerLink="/pagina8">Página 8</a></li>
-    <li><a routerLink="/pagina9">Página 9</a></li>
-  </ul>
-</nav>
+      <div class="buscador-container">
+        <input type="text" placeholder="🔍 Buscar en Carnes...">
+      </div>
 
-<main class="contenido-central">
-  
-  <section class="seccion-principal">
-    <h2>Sección 1</h2>
-    <p>Contenido sección 1 </p>
-  </section>
+      <section class="contenedor-blanco listado-seccion">
+        <div class="titulo-categoria">
+          <span>🥩</span>
+          <h2>Lacteos</h2>
+        </div>
 
-  
-  <article class="articulo-destacado">
-    <h3>Artículo Destacado</h3>
-    <p>Contenido artículo </p>
-  </article>
+        <div class="grid-productos">
+          
+          <article class="tarjeta-producto">
+            <div class="imagen-placeholder">
+              <img src="https://via.placeholder.com/150" alt="Pollo Fresco">
+            </div>
+            <div class="info-producto">
+              <h3>Yogurt Natural</h3>
+              <div class="precio-accion">
+                <span class="precio">$ 12.50</span>
+                <button class="btn-agregar">+ Agregar</button>
+              </div>
+            </div>
+          </article>
 
- 
-  <aside class="barra-lateral">
-    <h3>Barra Lateral</h3>
-    <p>Contenido aside </p>
-  </aside>
-</main>
+          <article class="tarjeta-producto">
+            <div class="imagen-placeholder">
+              <img src="https://via.placeholder.com/150" alt="Carne de Res">
+            </div>
+            <div class="info-producto">
+              <h3>Queso</h3>
+              <div class="precio-accion">
+                <span class="precio">$ 95.00</span>
+                <button class="btn-agregar">+ Agregar</button>
+              </div>
+            </div>
+          </article>
 
-<footer class="pie-pagina">
-  
-  <p>Pie de página </p>
-</footer>
+        </div>
+      </section>
+    </main>
+
+    <aside class="panel-carrito">
+      <div class="carrito-borde">
+        <div class="carrito-header">
+          <span>🛒</span>
+          <h3>Carrito de Venta</h3>
+        </div>
+        <div class="carrito-vacio">
+          <span class="icon-cart">🛒</span>
+          <p>No hay productos en el carrito</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
